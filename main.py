@@ -160,12 +160,6 @@ async def juegos_dificil(ctx):
     await ctx.send(file=picture)
     await ctx.send(f'Este es un brazo mecánico de cartón, el tutorial lo encuantras aquí: https://youtu.be/GTH_Tzg1DmA?si=RFzaJPwn2JVENnUx')
 
-
-@bot.command()
-async def choose(ctx, *choices: str):
-    """Chooses between multiple choices."""
-    await ctx.send(random.choice(choices))
-
 @bot.command()
 async def help_(ctx):
     await ctx.send(f'El bot cuenta con estas funciones:')
